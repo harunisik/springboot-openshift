@@ -13,7 +13,7 @@ public class Controller {
     @Value("${name}")
     private String name;
 
-// hook test 2
+// hook test 2 3
     @RequestMapping("/")
     public String index() {
         logger.info("index method method has been called !");
