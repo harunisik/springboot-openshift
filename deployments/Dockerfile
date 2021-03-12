@@ -16,5 +16,7 @@ ARG JAR_FILE=springboot-kubernetes-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
 ADD ${JAR_FILE} springboot-kubernetes.jar
 
+# hook test
+
 # Run the jar file
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/springboot-kubernetes.jar"]
